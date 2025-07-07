@@ -1,0 +1,141 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+.report/
+
+# Runtime data
+*.eid
+*.pid
+*.seed
+*.pid.lock
+
+# Directory for placing compiled output
+dist/
+build/
+.next/
+.nuxt/
+.vercel/
+.netlify/
+.temp/
+.tmp/
+out/
+
+# Dependency directories
+node_modules/
+jspm_packages/
+web_modules/
+
+# Optional npm cache directory
+.npm/
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache/
+
+# Next.js build output
+.next/
+
+# Nuxt.js build output
+.nuxt/
+
+# Gatsby files
+.cache/
+public/
+
+# SvelteKit build output
+.svelte-kit/
+
+# Deno files
+.deno/
+
+# VS Code files
+.vscode/
+
+# macOS files
+.DS_Store
+
+# Thumbnails
+.thumbnails/
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+
+# System files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE and editor files
+.idea/
+.project/
+.settings/
+.classpath
+.cproject
+.directory
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+*.bak
+*.orig
+*.rej
+
+# Other common files
+*.zip
+*.rar
+*.7z
+*.tar.gz
+*.gz
+*.log
+*.lock
+*.sqlite
+*.db
+*.DS_Store
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
