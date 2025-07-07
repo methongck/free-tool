@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ayat Tools</title>
+  <title>Free PNG to JPG Converter Online - Convert Images Easily | MT Tools</title>
+  <meta name="description" content="Convert your PNG images to JPG format quickly and easily with our free online PNG to JPG converter. Optimize image size and compatibility with MT Tools.">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script defer src="png-to-jpg.js"></script>
 </head>
 <body>
   <header class="header">
@@ -16,7 +18,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="index.html#tools">Tools</a></li>
           <li><a href="blog.html">Blog</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="about.html">About">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -25,9 +27,16 @@
       </button>
     </div>
   </header>
-  <main class="container" style="min-height:60vh;">
-    <h1>Welcome to Ayat Tools</h1>
-    <p>Your one-stop solution for 100+ free online tools for productivity, finance, images, documents, and more. Fast, simple, and always free.</p>
+  <main class="container tool-center" style="min-height:60vh;">
+    <h1>PNG to JPG Converter</h1>
+    <p style="max-width: 600px; text-align: center; margin-bottom: 20px;">Our free online PNG to JPG converter allows you to quickly transform your PNG images into JPG format. JPG files are generally smaller in size and ideal for web use where transparency is not required. Convert your images with ease while optimizing for web.</p>
+    <form id="imgForm" class="tool-form" style="max-width:400px;margin:2rem auto;">
+      <label for="imgInput">Select PNG Image</label>
+      <input type="file" id="imgInput" accept="image/png" required>
+      <button type="submit">Convert to JPG</button>
+    </form>
+    <div id="imgResult" style="font-size:1.1rem;color:#228be6;font-weight:600;text-align:center;"></div>
+    <button onclick="window.history.back()" class="back-btn" style="margin:2em auto 0 auto;display:block;">← Back</button>
   </main>
   <footer class="footer">
     <div class="container footer-container">
