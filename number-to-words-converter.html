@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number to Words Converter - Ayat Tools</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script defer src="number-to-words-converter.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">Ayat <span>Tools</span></div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#tools">Tools</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Open Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <main class="container" style="min-height:60vh;">
+    <h1>Number to Words Converter</h1>
+    <p style="text-align:center;max-width:500px;margin:0 auto 1.5em;">Convert any number to English words.</p>
+    <form id="numWordsForm" class="tool-card" style="max-width:400px;margin:0 auto;">
+      <label for="numInput">Number</label>
+      <input type="number" id="numInput" required style="font-size:1.2em;padding:0.7em 1em;">
+      <button type="submit">Convert</button>
+    </form>
+    <div id="numWordsResult" class="result-box" style="display:none;margin:2em auto 1em;max-width:400px;text-align:center;font-size:1.2em;"></div>
+    <button onclick="window.history.back()" class="back-btn">&larr; Back</button>
+  </main>
+  <footer class="footer">
+    <div class="container footer-container">
+      <!-- ...existing code... -->
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Ayat Tools. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Status Checker - Ayat Tools</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script defer src="website-status-checker.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">Ayat <span>Tools</span></div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#tools">Tools</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Open Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <main class="container" style="min-height:60vh;">
+    <h1>Website Status Checker</h1>
+    <p style="text-align:center;max-width:500px;margin:0 auto 1.5em;">Check if your website is online. Enter the website URL below:</p>
+    <form id="statusForm" class="tool-card" style="max-width:400px;margin:0 auto;">
+      <label for="url">Website URL</label>
+      <input type="url" id="url" name="url" placeholder="https://example.com" required>
+      <button type="submit">Check Status</button>
+      <div id="statusResult" style="margin-top:1.5em;font-weight:600;"></div>
+    </form>
+    <button onclick="window.history.back()" class="back-btn">&larr; Back</button>
+  </main>
+  <footer class="footer">
+    <div class="container footer-container">
+      <!-- ...existing code... -->
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Ayat Tools. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>

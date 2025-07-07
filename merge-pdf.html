@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merge PDF - Ayat Tools</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="merge-pdf.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">Ayat <span>Tools</span></div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#tools">Tools</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Open Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <main class="container tool-center" style="min-height:60vh;display:flex;flex-direction:column;align-items:center;justify-content:center;">
+    <h1>Merge PDF</h1>
+    <form id="mergePdfForm" class="tool-form" style="max-width:400px;margin:2rem auto;text-align:center;">
+      <input type="file" id="pdfInput" accept="application/pdf" multiple required>
+      <button type="submit">Merge PDFs</button>
+    </form>
+    <div id="resultBox" class="result-box" style="margin:1.5em auto;text-align:center;"></div>
+    <button onclick="window.history.back()" class="back-btn" style="margin:2em auto 0 auto;display:block;">← Back</button>
+  </main>
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-col about">
+        <h3>About</h3>
+        <p>Ayat Tools offers 100+ free online tools for productivity, finance, images, documents, and more. Fast, simple, and always free.</p>
+      </div>
+      <div class="footer-col quick-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#tools">Tools</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col categories">
+        <h3>Categories</h3>
+        <ul>
+          <li>Finance</li>
+          <li>Image</li>
+          <li>Document</li>
+          <li>Text</li>
+          <li>Web/SEO</li>
+          <li>Developer</li>
+          <li>QR & Barcode</li>
+          <li>Date & Time</li>
+          <li>Education</li>
+        </ul>
+      </div>
+      <div class="footer-col contact">
+        <h3>Contact</h3>
+        <ul>
+          <li>Email: <a href="mailto:info@ayattools.com">info@ayattools.com</a></li>
+          <li>Twitter: <a href="#">@AyatTools</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Ayat Tools. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>

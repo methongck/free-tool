@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Ayat Tools</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script defer src="contact.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">Ayat <span>Tools</span></div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#tools">Tools</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Open Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <main>
+    <div class="contact-modal-wrapper">
+      <form id="contactForm" class="contact-form-modal">
+        <h1>Contact Us</h1>
+        <div class="contact-form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="contact-form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="contact-form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="contact-btn">Send Message</button>
+        <div id="formSuccess" style="display:none;color:#38d9a9;margin-top:1em;font-weight:600;">Thank you! Your message has been sent.</div>
+      </form>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-col about">
+        <h3>About</h3>
+        <p>Ayat Tools offers 100+ free online tools for productivity, finance, images, documents, and more. Fast, simple, and always free.</p>
+      </div>
+      <div class="footer-col quick-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#tools">Tools</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col categories">
+        <h3>Categories</h3>
+        <ul>
+          <li><a href="index.html#finance">Finance</a></li>
+          <li><a href="index.html#image">Image</a></li>
+          <li><a href="index.html#document">Document</a></li>
+          <li><a href="index.html#text">Text</a></li>
+          <li><a href="index.html#web-seo">Web/SEO</a></li>
+          <li><a href="index.html#developer">Developer</a></li>
+          <li><a href="index.html#qr-barcode">QR & Barcode</a></li>
+          <li><a href="index.html#date-time">Date & Time</a></li>
+          <li><a href="index.html#education">Education</a></li>
+        </ul>
+      </div>
+      <div class="footer-col contact">
+        <h3>Contact</h3>
+        <ul>
+          <li>Email: <a href="mailto:info@ayattools.com">info@ayattools.com</a></li>
+          <li>Twitter: <a href="#">@AyatTools</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Ayat Tools. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>

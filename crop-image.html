@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crop Image - Ayat Tools</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="crop-image.js"></script>
+</head>
+<body>
+  <header class="header">
+    <!-- ...existing code... -->
+  </header>
+  <main class="container tool-center">
+    <h1>✂️ Crop Image</h1>
+    <p>ছবি আপলোড করুন, crop area দিন, এবং crop করা ইমেজ ডাউনলোড করুন। (Upload an image, set crop area, and download the cropped image.)</p>
+    <form id="cropForm" class="tool-form">
+      <input type="file" id="imageInput" accept="image/*" required>
+      <div style="display:flex;gap:1em;flex-wrap:wrap;justify-content:center;">
+        <div><label>X: <input type="number" id="cropX" min="0" value="0" style="width:60px;"></label></div>
+        <div><label>Y: <input type="number" id="cropY" min="0" value="0" style="width:60px;"></label></div>
+        <div><label>Width: <input type="number" id="cropW" min="1" value="100" style="width:60px;"></label></div>
+        <div><label>Height: <input type="number" id="cropH" min="1" value="100" style="width:60px;"></label></div>
+      </div>
+      <button type="submit">Crop & Download</button>
+    </form>
+    <button onclick="window.history.back()" class="back-btn" style="margin:2em auto 0 auto;display:block;">← Back</button>
+    <div id="resultBox" class="result-box" style="display:none;"></div>
+  </main>
+  <footer class="footer">
+    <!-- ...existing code... -->
+  </footer>
+</body>
+</html>

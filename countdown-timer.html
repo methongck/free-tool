@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown Timer - Ayat Tools</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script defer src="countdown-timer.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">Ayat <span>Tools</span></div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#tools">Tools</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Open Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <main class="container" style="min-height:60vh;">
+    <h1>Countdown Timer</h1>
+    <p style="text-align:center;max-width:500px;margin:0 auto 1.5em;">Set a timer and watch it count down live.</p>
+    <form id="timerForm" class="tool-card" style="max-width:400px;margin:0 auto;">
+      <label for="minutesInput">Minutes</label>
+      <input type="number" id="minutesInput" name="minutesInput" min="0" placeholder="e.g. 5" required style="font-size:1.2em;padding:0.7em 1em;">
+      <label for="secondsInput">Seconds</label>
+      <input type="number" id="secondsInput" name="secondsInput" min="0" max="59" placeholder="e.g. 30" required style="font-size:1.2em;padding:0.7em 1em;">
+      <button type="submit">Start Timer</button>
+    </form>
+    <div id="timerResult" class="result-box" style="display:none;margin:2em auto 1em;max-width:400px;text-align:center;font-size:2em;"></div>
+    <button onclick="window.history.back()" class="back-btn">&larr; Back</button>
+  </main>
+  <footer class="footer">
+    <div class="container footer-container">
+      <!-- ...existing code... -->
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Ayat Tools. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>

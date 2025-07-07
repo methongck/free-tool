@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convert WebP - Ayat Tools</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="convert-webp.js"></script>
+</head>
+<body>
+  <header class="header">
+    <!-- ...existing code... -->
+  </header>
+  <main class="container tool-center">
+    <h1>🌐 Convert WebP</h1>
+    <p>WebP ছবি PNG/JPG-তে কনভার্ট করুন। (Convert WebP images to PNG/JPG.)</p>
+    <form id="webpForm" class="tool-form">
+      <input type="file" id="imageInput" accept="image/webp,image/*" required>
+      <label for="format">Convert to:</label>
+      <select id="format">
+        <option value="png">PNG</option>
+        <option value="jpeg">JPG</option>
+      </select>
+      <button type="submit">Convert & Download</button>
+    </form>
+    <div style="display:flex;justify-content:center;gap:2em;margin:1em 0;flex-wrap:wrap;">
+      <div>
+        <h3 style="text-align:center;">Uploaded Image</h3>
+        <img id="previewImg" src="" alt="Preview" style="max-width:220px;max-height:180px;display:none;border:1px solid #eee;border-radius:8px;">
+      </div>
+      <div>
+        <h3 style="text-align:center;">Converted Image</h3>
+        <img id="convertedImg" src="" alt="Converted" style="max-width:220px;max-height:180px;display:none;border:1px solid #eee;border-radius:8px;">
+      </div>
+    </div>
+    <div id="resultBox" class="result-box" style="display:none;"></div>
+    <button onclick="window.history.back()" class="back-btn" style="margin:2em auto 0 auto;display:block;">← Back</button>
+  </main>
+  <footer class="footer">
+    <!-- ...existing code... -->
+  </footer>
+</body>
+</html>
